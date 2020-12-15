@@ -1,0 +1,34 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/atcrowdfunding?serverTimezone=GMT%2b8
+    password: 1234
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: SCW-PROJECT
+  redis:
+    host: 192.168.188.129
+    port: 6379
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+logging:
+  file:
+    path: D:\javaX\logging
+  level:
+    com:
+      offcn: debug
+
+oss:
+  endpoint : http://oss-cn-beijing.aliyuncs.com
+  accessKeyId : LTAI4G2a7EjvrU9NugeZDq33
+  accessKeySecret : RUKsps7BGUsCZHWvD0qLvZDXhGOcCG
+  bucketName : 20201208-zhj
+  bucketDomain : https://20201208-zhj.oss-cn-beijing.aliyuncs.com
